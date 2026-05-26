@@ -30,6 +30,29 @@ const ENDPOINTS = {
         modificar: (id)=> `/usuarios/${id}`,
         deletar: (id)=> `/usuarios/${id}`
     },
-
+    matches:{
+        base: "/matches",
+        verUsuarios: "/matches/discover/usuarios",
+        verPets: "/matches/discover/pets",
+        verInstituicao: (id)=> `/matches/instituicao/${id}`,
+        verUsuarioEspecifico: (id) => `/matches/usuario/${id}`,
+        fazerMatchUsuario: "/matches/swipe/usuario",
+        fazerMatchInstituicao: "/matches/swipe/instituicao"
+    },
+    adocao:{
+        base: "/adocoes",
+        fazerAdocao: "/adocoes",
+        verAdocao: (id) => `/adocoes/usuario/${id}`,
+        mudarAdocao: (id)=> `/adocoes/${id}/status`
+    },
+    doacoes:{
+        base: "/doacoes",
+        fazerDoacao: "/doacoes",
+        verDoacao: (id)=> `/doacoes/instituicao/${id}`
+    },
+    enderecos:{
+        base: "/enderecos",
+        verEnderecoEspecifico: (id)=> `/enderecos/${id}`
+    }
 
 }
