@@ -14,7 +14,7 @@
 - [x] Estruturação de pastas (feature-based)
 - [x] Configuração do projeto Vite + React
 - [x] HTTP Client (`shared/api/client.js`) com axios
-- [ ] Constantes de endpoints (`shared/constants/endpoints.js`) ← **em andamento**
+- [x] Constantes de endpoints (`shared/constants/endpoints.js`) ← **em andamento**
 - [ ] Constantes de rotas do frontend (`shared/constants/routes.js`)
 - [ ] Constantes de chaves do localStorage (`shared/constants/storage-keys.js`)
 - [ ] Services: `enderecos`, `usuarios`, `instituicoes`, `pets`

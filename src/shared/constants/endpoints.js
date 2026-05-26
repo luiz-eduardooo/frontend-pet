@@ -1,4 +1,4 @@
-const ENDPOINTS = {
+export const ENDPOINTS = {
     usuario:{
         base: "/usuarios",
         criar: "/usuarios",
