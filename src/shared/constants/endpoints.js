@@ -22,14 +22,6 @@ export const ENDPOINTS = {
         modificar: (id)=> `/pets/${id}`,
         deletar: (id)=> `/pets/${id}`
     },
-    usuario:{
-        base: "/usuarios",
-        criar: "/usuarios",
-        login: "/usuarios/login",
-        verPorId: (id)=> `/usuarios/${id}`,
-        modificar: (id)=> `/usuarios/${id}`,
-        deletar: (id)=> `/usuarios/${id}`
-    },
     matches:{
         base: "/matches",
         verUsuarios: "/matches/discover/usuarios",
@@ -53,6 +45,10 @@ export const ENDPOINTS = {
     enderecos:{
         base: "/enderecos",
         verEnderecoEspecifico: (id)=> `/enderecos/${id}`
-    }
+    },
+    resgates:{
+        base: "/resgates",
+        reportar: "/resgates/reportar"
+    },
 
 }

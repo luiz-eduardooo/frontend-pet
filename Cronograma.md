@@ -6,7 +6,7 @@
 
 ---
 
-## ✅ Fase 0 — Fundação (em andamento)
+## 🟡 Segunda Entrega — 26/05 (Terça-feira)
 
 > Toda a lógica base da aplicação, sem nenhuma tela ainda.
 
@@ -17,12 +17,12 @@
 - [x] Constantes de endpoints (`shared/constants/endpoints.js`) ← **em andamento**
 - [ ] Constantes de rotas do frontend (`shared/constants/routes.js`)
 - [ ] Constantes de chaves do localStorage (`shared/constants/storage-keys.js`)
-- [ ] Services: `enderecos`, `usuarios`, `instituicoes`, `pets`
-- [ ] Services: `matches`, `adocoes`, `resgates`, `doacoes`
+- [x] Services: `enderecos`, `usuarios`, `instituicoes`, `pets`
+- [x] Services: `matches`, `adocoes`, `resgates`, `doacoes`
 
 ---
 
-## 🟡 Segunda Entrega — 26/05 (Terça-feira)
+## 🟡 Terceira Entrega — 29/05 (Sexta-feira)
 
 > Primeiras telas visíveis: Landing Page inicial.
 
@@ -43,7 +43,8 @@
 
 ---
 
-## 🟡 Terceira Entrega — 29/05 (Sexta-feira)
+
+## 🟠 Quarta Entrega — 02/06 (Terça-feira)
 
 > Landing Page completa.
 
@@ -61,7 +62,7 @@
 
 ---
 
-## 🟠 Quarta Entrega — 02/06 (Terça-feira)
+## 🔴 Entrega Final — 09/06 (Terça-feira)
 
 > Autenticação e listagem de pets.
 
@@ -80,8 +81,6 @@
   - Pop-up de detalhe ao clicar no card
 
 ---
-
-## 🔴 Entrega Final — 09/06 (Terça-feira)
 
 > Refinamentos, fluxos completos e polimento.
 
