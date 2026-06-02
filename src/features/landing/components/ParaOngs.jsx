@@ -1,4 +1,5 @@
 import { Button } from "../../../shared/components/Button"
+import { DashBoardMock } from "./DashBoardMock"
 
 const sectionStyle = "py-20 md:py-28 bg-white overflow-hidden"
 
@@ -52,6 +53,9 @@ export function ParaOngs(){
                         </div>
                     </div>
                     {/* Direita */}
+                    <div className="flex-1 flex justify-center md:justify-end">
+                        <DashBoardMock/>
+                    </div>
                 </div>
             </div>
         </section>
