@@ -11,19 +11,23 @@ const linkStyle = "text-sm font-medium text-zinc-600 no-underline hover:text-zin
 
 const containerButtonSyle = "hidden md:flex items-center gap-3"
 
-const links = ["Como Funciona", "Para ONGs", "Sobre"]
+const links = [
+    { texto: "Como Funciona", href: "#como-funciona" },
+    { texto: "Para ONGs", href: "#para-ongs" },
+    { texto: "Sobre", href: "#depoimentos" },
+]
 
 
 
 
-export function Header(){
-    return(
+export function Header() {
+    return (
         <header className={containerExternoStyle}>
             <div className={containerInternoStyle}>
-                <Logo/>
+                <Logo />
                 <nav className={navegacaoStyle}>
-                    {links.map((el)=>{
-                        return (<a key={el} className={linkStyle} href="#">{el}</a>)
+                    {links.map((el) => {
+                        return (<a key={el.texto} className={linkStyle} href={el.href}>{el.texto}</a>)
                     })}
                 </nav>
                 <div className={containerButtonSyle}>

@@ -1,4 +1,6 @@
+import { BannerCTA } from "../components/BannerCTA";
 import { ComoFunciona } from "../components/ComoFunciona";
+import { Depoimentos } from "../components/Depoimentos";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/header";
 import { Hero } from "../components/Hero";
@@ -12,6 +14,8 @@ export function LandingPage(){
                 <Hero/>
                 <ComoFunciona/>
                 <ParaOngs/>
+                <Depoimentos/>
+                <BannerCTA/>
             </main>
             <Footer/>
         </div>
