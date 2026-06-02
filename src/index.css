@@ -45,3 +45,7 @@
               radial-gradient(ellipse 50% 40% at 100% 50%, #FFF2EC 0%, transparent 60%),
               #fff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
