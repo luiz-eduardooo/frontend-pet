@@ -4,13 +4,16 @@ import { LandingPage } from "../../features/landing/pages/LandingPage";
 import LoginUsuario from "../../features/landing/pages/LoginUsuario";
 import { CadastroUsuario } from "../../features/landing/pages/CadastroUsuario";
 import { LayoutAdotante } from "../../features/landing/pages/LayoutAdotante";
+import { CadastroInstituicao } from "../../features/landing/pages/CadastroInstituicao";
 
 export function Router() {
     return (<BrowserRouter>
         <Routes>
             <Route path="/" element={<LandingPage />}></Route>
             <Route path="/login" element={<LoginUsuario />}></Route>
-            <Route path="/cadastro" element={<CadastroUsuario />}></Route>
+            <Route path="/cadastro" element={<CadastroUsuario />}
+            ></Route>
+            <Route path="/cadastro/ongs" element={<CadastroInstituicao/>}/>
             <Route element={<RotaProtegidaUsuario />}>
                 <Route element={<LayoutAdotante />}>
                     <Route path="/adotante/home" element={<div></div>}/>
