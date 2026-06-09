@@ -16,7 +16,7 @@ const LoginUsuario = () => {
         try {
             const data = await loginUsuario({ email, password });
             entrar({ ...data.user, token: data.token, tipo: 'usuario' })
-            navigate('/')
+            navigate('/adotante/home')
         }
         catch (error) {
             console.error(error)

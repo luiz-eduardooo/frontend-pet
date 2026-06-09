@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Button } from "../../../shared/components/Button"
 import { Logo } from "../../../shared/components/Logo"
 
@@ -31,8 +32,8 @@ export function Header() {
                     })}
                 </nav>
                 <div className={containerButtonSyle}>
-                    <Button variante="ghost" tamanho="md">Entrar</Button>
-                    <Button variante="primary" tamanho="md">Comecar Agora</Button>
+                    <Link to={"/login"}><Button variante="ghost" tamanho="md">Entrar</Button></Link>
+                    <Link to={"/cadastro"}><Button variante="primary" tamanho="md">Comecar Agora</Button></Link>
                 </div>
             </div>
             <div></div>
