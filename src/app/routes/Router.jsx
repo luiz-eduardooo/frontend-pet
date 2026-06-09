@@ -6,6 +6,7 @@ import { CadastroUsuario } from "../../features/landing/pages/CadastroUsuario";
 import { LayoutAdotante } from "../../features/adotantes/LayoutAdotante";
 import { CadastroInstituicao } from "../../features/landing/pages/CadastroInstituicao";
 import { Descobrir } from "../../features/adotantes/Descobrir";
+import { Matches } from "../../features/adotantes/Matches";
 
 export function Router() {
     return (<BrowserRouter>
@@ -17,7 +18,7 @@ export function Router() {
             <Route element={<RotaProtegidaUsuario />}>
                 <Route element={<LayoutAdotante />}>
                     <Route path="/adotante/home" element={<Descobrir />} />
-                    <Route path="/adotante/matches" element={<div></div>} />
+                    <Route path="/adotante/matches" element={<Matches />} />
                     <Route path="/adotante/adocoes" element={<div></div>} />
                     <Route path="/adotante/instituicoes" element={<div></div>} />
                     <Route path="/adotante/resgate" element={<div></div>} />
