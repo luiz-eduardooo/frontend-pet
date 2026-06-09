@@ -3,7 +3,7 @@ import client from "../../../shared/api/client";
 
 
 export async function buscarUsuarioPorId(id){
-    const {data} = await client.get(ENDPOINTS.usuario.base(id));
+    const {data} = await client.get(ENDPOINTS.usuario.verPorId(id));
     return data;
 }
 
@@ -25,5 +25,3 @@ export async function modificarUsuario(id, dados){
     const {data} = await client.patch(ENDPOINTS.usuario.modificar(id), dados)
     return data;
 }
-
-

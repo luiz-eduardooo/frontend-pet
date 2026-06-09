@@ -11,6 +11,7 @@ import { Adocoes } from "../../features/adotantes/Adocoes";
 import { Instituicoes } from "../../features/adotantes/Instituicoes";
 import { InstituicaoDetail } from "../../features/adotantes/InstituicaoDetail";
 import { Resgate } from "../../features/adotantes/Resgate";
+import { Perfil } from "../../features/adotantes/Perfil";
 
 export function Router() {
     return (<BrowserRouter>
@@ -27,7 +28,7 @@ export function Router() {
                     <Route path="/adotante/instituicoes" element={<Instituicoes />} />
                     <Route path="/adotante/instituicoes/:id" element={<InstituicaoDetail />} />
                     <Route path="/adotante/resgate" element={<Resgate />} />
-                    <Route path="/adotante/perfil" element={<div></div>} />
+                    <Route path="/adotante/perfil" element={<Perfil />} />
                 </Route>
             </Route>
         </Routes>
