@@ -13,8 +13,8 @@ const tamanhos = {
 
 const base = "inline-flex items-center justify-center font-medium cursor-pointer select-none whitespace-nowrap"
 
-export function Button({variante = "primary", tamanho = "md", children}){
-    const final = `${base} ${estilos[variante]} ${tamanhos[tamanho]}`
+export function Button({variante = "primary", tamanho = "md", full, children}){
+    const final = `${base} ${estilos[variante]} ${tamanhos[tamanho]} ${full? "w-full" : ""}`
     
     return <button className={final}>{children}</button>
 }
