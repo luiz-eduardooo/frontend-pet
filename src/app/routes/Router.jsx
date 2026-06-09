@@ -3,7 +3,7 @@ import { RotaProtegidaUsuario } from "./RotaProtegidaUsuario";
 import { LandingPage } from "../../features/landing/pages/LandingPage";
 import LoginUsuario from "../../features/landing/pages/LoginUsuario";
 import { CadastroUsuario } from "../../features/landing/pages/CadastroUsuario";
-import { LayoutAdotante } from "../../features/landing/pages/LayoutAdotante";
+import { LayoutAdotante } from "../../features/adotantes/LayoutAdotante";
 import { CadastroInstituicao } from "../../features/landing/pages/CadastroInstituicao";
 
 export function Router() {

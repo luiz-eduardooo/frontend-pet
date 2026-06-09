@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-import { Logo } from "../../../shared/components/Logo"
-import { useAuth } from "../../../shared/contexts/AuthContext"
+import { Logo } from "../../shared/components/Logo"
+import { useAuth } from "../../shared/contexts/AuthContext"
 
 const links = [
     { icone: "🔥", texto: "Descobrir", to: "/adotante/home" },
