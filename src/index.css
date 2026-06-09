@@ -49,3 +49,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+.field:focus {
+  outline: none;
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 3px var(--color-primary-100);
+}

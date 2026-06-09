@@ -15,6 +15,6 @@ const base = "inline-flex items-center justify-center font-medium cursor-pointer
 
 export function Button({variante = "primary", tamanho = "md", children}){
     const final = `${base} ${estilos[variante]} ${tamanhos[tamanho]}`
-
+    
     return <button className={final}>{children}</button>
 }
