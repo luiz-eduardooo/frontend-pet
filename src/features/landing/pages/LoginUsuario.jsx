@@ -55,7 +55,7 @@ const LoginUsuario = () => {
                     </form>
 
                     <div className='text-center mt-6 ...'>
-                        <p>Não tem conta? <Link className='text-primary-600 font-medium'>Cadastre-se</Link></p>
+                        <p>Não tem conta? <Link className='text-primary-600 font-medium' to={"/cadastro"}>Cadastre-se</Link></p>
                     </div>
 
                 </div>
