@@ -7,6 +7,7 @@ import { LayoutAdotante } from "../../features/adotantes/LayoutAdotante";
 import { CadastroInstituicao } from "../../features/landing/pages/CadastroInstituicao";
 import { Descobrir } from "../../features/adotantes/Descobrir";
 import { Matches } from "../../features/adotantes/Matches";
+import { Adocoes } from "../../features/adotantes/Adocoes";
 
 export function Router() {
     return (<BrowserRouter>
@@ -19,7 +20,7 @@ export function Router() {
                 <Route element={<LayoutAdotante />}>
                     <Route path="/adotante/home" element={<Descobrir />} />
                     <Route path="/adotante/matches" element={<Matches />} />
-                    <Route path="/adotante/adocoes" element={<div></div>} />
+                    <Route path="/adotante/adocoes" element={<Adocoes />} />
                     <Route path="/adotante/instituicoes" element={<div></div>} />
                     <Route path="/adotante/resgate" element={<div></div>} />
                     <Route path="/adotante/perfil" element={<div></div>} />
