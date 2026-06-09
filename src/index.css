@@ -30,28 +30,145 @@
   --color-danger-700: #991B1B;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+/* ─── Cards ─────────────────────────────────────────────────────────────── */
 .card-lift {
   transition: box-shadow 150ms ease, transform 150ms ease;
 }
 .card-lift:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.09), 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09), 0 4px 8px rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
 }
+.card-hover {
+  transition: box-shadow 150ms ease, transform 150ms ease, border-color 150ms ease;
+}
+.card-hover:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
+}
+.shadow-card {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 
-
+/* ─── Backgrounds ───────────────────────────────────────────────────────── */
 .hero-bg {
   background: radial-gradient(ellipse 80% 60% at 60% -10%, #FFF2EC 0%, transparent 70%),
               radial-gradient(ellipse 50% 40% at 100% 50%, #FFF2EC 0%, transparent 60%),
               #fff;
 }
-
-html {
-  scroll-behavior: smooth;
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.55) 1px, transparent 1px);
+  background-size: 16px 16px;
 }
 
+/* ─── Inputs ────────────────────────────────────────────────────────────── */
 .field:focus {
   outline: none;
   border-color: var(--color-primary-500);
   box-shadow: 0 0 0 3px var(--color-primary-100);
+}
+
+/* ─── Spinner ───────────────────────────────────────────────────────────── */
+.spin {
+  animation: pm-spin 0.7s linear infinite;
+}
+@keyframes pm-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Modal / overlay ───────────────────────────────────────────────────── */
+.overlay-in {
+  animation: pm-fade 0.18s ease both;
+}
+.modal-in {
+  animation: pm-modal 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes pm-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pm-modal {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ─── Toast ─────────────────────────────────────────────────────────────── */
+.toast-in {
+  animation: pm-toast-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.toast-out {
+  animation: pm-toast-out 0.2s ease both;
+}
+@keyframes pm-toast-in {
+  from { opacity: 0; transform: translateX(16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes pm-toast-out {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(16px); }
+}
+
+/* ─── Swipe (Descobrir) ─────────────────────────────────────────────────── */
+.pet-card-anim {
+  animation: pm-card-in 0.25s ease both;
+}
+.swipe-out-right {
+  animation: pm-swipe-right 0.3s ease forwards;
+}
+.swipe-out-left {
+  animation: pm-swipe-left 0.3s ease forwards;
+}
+.swipe-btn {
+  transition: transform 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+.swipe-btn:hover {
+  transform: scale(1.06);
+}
+@keyframes pm-card-in {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes pm-swipe-right {
+  to { opacity: 0; transform: translateX(140%) rotate(18deg); }
+}
+@keyframes pm-swipe-left {
+  to { opacity: 0; transform: translateX(-140%) rotate(-18deg); }
+}
+
+/* ─── Diversos ──────────────────────────────────────────────────────────── */
+.fade-up {
+  animation: pm-fade-up 0.3s ease both;
+}
+@keyframes pm-fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.skeleton {
+  background: linear-gradient(90deg, #f4f4f5 25%, #e4e4e7 37%, #f4f4f5 63%);
+  background-size: 400% 100%;
+  animation: pm-skeleton 1.4s ease infinite;
+}
+@keyframes pm-skeleton {
+  from { background-position: 100% 50%; }
+  to { background-position: 0 50%; }
+}
+.check-draw {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: pm-check 0.5s ease 0.15s forwards;
+}
+@keyframes pm-check {
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

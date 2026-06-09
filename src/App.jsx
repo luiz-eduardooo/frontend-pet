@@ -1,17 +1,14 @@
 import { Router } from "./app/routes/Router"
-import { LandingPage } from "./features/landing/pages/LandingPage"
 import { AuthProvider } from "./shared/contexts/AuthContext"
+import { ToastProvider } from "./shared/components/Toast"
 
 function App() {
-
   return (
-    <>
     <AuthProvider>
-      <Router>
-    <LandingPage/>
-    </Router>
+      <ToastProvider>
+        <Router />
+      </ToastProvider>
     </AuthProvider>
-    </>
   )
 }
 
