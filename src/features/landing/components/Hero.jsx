@@ -1,6 +1,6 @@
 import { Badge } from "../../../shared/components/Badge"
 import { Button } from "../../../shared/components/Button"
-
+import { Link } from "react-router-dom"
 const sectionStyle = "hero-bg pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
 
 const containerStyle = "max-w-6xl mx-auto px-6"
@@ -44,8 +44,8 @@ export function Hero(){
                         <h1 className={textoPrincipalStyle}>Encontre o Pet Ideal para sua família!</h1>
                         <h2 className={subTituloStyle}>Conectamos adotantes e ONGs através de matches inteligentes. Como um Tinder, mas para mudar uma vida de verdade!</h2>
                         <div className={containerBotaoStyle}>
-                        <Button variante="primary" tamanho="sm">❤ Quero adotar</Button>
-                        <Button variante="secondary" tamanho="sm">🏠 Sou uma ONG</Button>
+                        <Link to={"/login"}><Button variante="primary" tamanho="sm">❤ Quero adotar</Button></Link>
+                        <Link to={"/cadastro/ongs"}><Button variante="secondary" tamanho="sm">🏠 Sou uma ONG</Button></Link>
                         </div>
                         <div className={containerEstatisticaStyle}>
                             <div className={blocoStatStyle}>

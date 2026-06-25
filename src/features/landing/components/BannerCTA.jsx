@@ -1,4 +1,5 @@
 import { Button } from "../../../shared/components/Button"
+import { Link } from "react-router-dom"
 
 const sectionStyle = "py-20 md:py-28 bg-white"
 
@@ -21,8 +22,8 @@ export function BannerCTA(){
                     <h2 className={titulo}>Pronto pra mudar uma vida?</h2>
                     <p className={subTitulo}>Mais de 1.200 pets estão esperando por você agora. Cadastre-se grátis e faça seu primeiro match hoje.</p>
                     <div className={containerButton}>
-                        <Button tamanho="lg" variante="primary">Começar agora — é grátis ❤</Button>
-                        <Button tamanho="lg" variante="secondary">Ver pets disponíveis</Button>
+                    <Link to={"/login"}><Button tamanho="lg" variante="primary">Começar agora — é grátis ❤</Button></Link>
+                        <Link to={"/adotante/matches"}><Button tamanho="lg" variante="secondary">Ver pets disponíveis</Button></Link>
                     </div>
                     <p className="text-xs text-zinc-400 mt-5">Sem cartão de crédito · Cadastro em 2 minutos</p>
                 </div>

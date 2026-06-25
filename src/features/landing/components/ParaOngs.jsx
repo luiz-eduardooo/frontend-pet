@@ -1,6 +1,6 @@
 import { Button } from "../../../shared/components/Button"
 import { DashBoardMock } from "./DashBoardMock"
-
+import { Link } from "react-router-dom"
 const sectionStyle = "py-20 md:py-28 bg-white overflow-hidden"
 
 const linhaColunas = "flex flex-col md:flex-row items-center gap-12 md:gap-16"
@@ -49,7 +49,7 @@ export function ParaOngs(){
                             })}
                         </ul>
                         <div className="mt-8">
-                            <Button variante="primary">Cadastrar minha ONG gratuitamente →</Button>
+                        <Link to={"/cadastro/ongs"}><Button variante="primary">Cadastrar minha ONG gratuitamente →</Button></Link>
                         </div>
                     </div>
                     {/* Direita */}
